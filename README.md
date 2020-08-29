@@ -1,6 +1,10 @@
 # Scatter BETA-Assets Tool  
 SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generación por partículas en blender), incluye unos Assets realizados por mi.
 
+<p align="center">
+  <img width="460" height="300" src=Info/Thumbnail-SBAT.png>
+</p>
+
 <p align="left">
   <!-- Fecha - Último commit -->
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BETAPANDERETA/Scatter-BETA-Assets-Tool?logo=blender&logoColor=white&style=for-the-badge">
@@ -10,6 +14,8 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
   <a href="https://github.com/BETAPANDERETA/Scatter-BETA-Assets-Tool/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/BETAPANDERETA/Scatter-BETA-Assets-Tool?style=for-the-badge"></a>
   <!-- Viendo icono -->
   <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/BETAPANDERETA/Scatter-BETA-Assets-Tool?color=yellow&logoColor=white&style=for-the-badge">
+  <!-- Licencia-->
+
 </p>
 
 ## Requisitos:
@@ -22,7 +28,9 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 4. El add-on aún está en construcción, sujeto a mejoras.
 
 ## Herramientas del Add-on
-(Explicación en construcción)
+<p align="center">
+  <img width="800" height="2000" src=Info/SBAT_INFO_ES.png>
+</p>
 
 ## Instalación
 1. Descargar la carpeta Add-on de este repositorio.
@@ -34,6 +42,17 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 ## Uso
 (Video en construcción)
 ## Demostraciones y capturas
-(En construcción)
+
+<p align="left">
+
+  <!-- Icono youtube -->
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=red&label=VIDEO%20DEMOSTRACI%C3%93N&logo=YOUTUBE&style=for-the-badge&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8c6GiAnGTdA">
+  <!-- Enlace video -->
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=8c6GiAnGTdA" target="_blank">
+  <img src="http://img.youtube.com/vi/8c6GiAnGTdA.jpg" alt="SB-AT" width="240" height="180" border="10" />
+  </a>
+
+</p>
+
 ## Licencia
 Aún estoy escogiendo la licencia a usar
