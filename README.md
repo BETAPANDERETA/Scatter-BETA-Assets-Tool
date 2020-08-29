@@ -40,9 +40,7 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 5. Habilitar el add-on.
 
 <p align="left">
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=green&label=DRIVE&logo=google&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE%2Fview%3Fusp%3Dsharing">
-
-  [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=green&label=DRIVE&logo=google&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE%2Fview%3Fusp%3Dsharing"> [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
 </p>
 
 ## Uso
@@ -63,16 +61,12 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 ## Descargas externas
 
 <p align="left">
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=RED&label=GUMROAD&logo=gumroad&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fgum.co%2FKdCfz">
-
-  [Gumroad](https://gum.co/KdCfz)
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=RED&label=GUMROAD&logo=gumroad&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fgum.co%2FKdCfz"> [Gumroad](https://gum.co/KdCfz)
 </p>
 
 <p align="left">
 
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=yellow&label=Blender%20marketplace&logo=blender&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fblendermarket.com%2Fproducts%2Fscatter-beta-assets-tool-">
-
-  [Blender marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=yellow&label=Blender%20marketplace&logo=blender&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fblendermarket.com%2Fproducts%2Fscatter-beta-assets-tool-"> [Blender marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
 </p>
 
 ## Licencia
