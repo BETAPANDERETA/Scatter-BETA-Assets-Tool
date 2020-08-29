@@ -15,7 +15,7 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
   <!-- Viendo icono -->
   <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/BETAPANDERETA/Scatter-BETA-Assets-Tool?color=yellow&logoColor=white&style=for-the-badge">
   <!-- Licencia-->
-
+  <img alt="GitHub" src="https://img.shields.io/github/license/BETAPANDERETA/Scatter-BETA-Assets-Tool?color=yellow&style=for-the-badge">
 </p>
 
 ## Requisitos:
@@ -29,15 +29,21 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 
 ## Herramientas del Add-on
 <p align="center">
-  <img width="800" height="2000" src=Info/SBAT_INFO_ES.png>
+  <img width="500" height="1100" src=Info/SBAT_INFO_ES.png>
 </p>
 
 ## Instalación
 1. Descargar la carpeta Add-on de este repositorio.
-2. Descargar el archivo "BETA_assets.blend" que se encuentra aquí: (Carpeta en construcción), una vez descargado poner el archivo en la carpeta "assets" de la carpeta descargada (Add-on)
+2. Descargar el archivo "BETA_assets.blend" (Ir a enlace de abajo), una vez descargado poner el archivo en la carpeta "assets" de la carpeta descargada (Add-on)
 3. Comprimir la carpeta Add-on descargada y ubicarla en un sitio de preferencia.
 4. Dentro de blender, irse al apartado "Edit", ya dentro ir a "Preferences", en el sub-menú de Add-ons, ir a "Install" (Parte superior derecha) y allí buscar donde se encuentra la carpeta comprimida.
 5. Habilitar el add-on.
+
+<p align="left">
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=green&label=DRIVE&logo=google&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE%2Fview%3Fusp%3Dsharing">
+
+  [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
+</p>
 
 ## Uso
 (Video en construcción)
@@ -54,5 +60,20 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 
 </p>
 
+## Descargas externas
+
+<p align="left">
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=RED&label=GUMROAD&logo=gumroad&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fgum.co%2FKdCfz">
+
+  [Gumroad](https://gum.co/KdCfz)
+</p>
+
+<p align="left">
+
+  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=yellow&label=Blender%20marketplace&logo=blender&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fblendermarket.com%2Fproducts%2Fscatter-beta-assets-tool-">
+
+  [Blender marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
+</p>
+
 ## Licencia
-Aún estoy escogiendo la licencia a usar
+Licencia MIT (Open source)
