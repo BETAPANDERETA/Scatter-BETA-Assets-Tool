@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
 # CONTACT: lbetancurd@unal.edu.co                                       |
-# LICENCE: (POR DEFINIR)                                                |
+# LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 
 import bpy
@@ -70,7 +70,7 @@ def scatterTool(particula):
                      
     for part in id_part_list:
 
-        print(part)
+        #print(part)
         #part.name +="_"+str(objName)
         part.type = 'HAIR'
         part.render_type = 'COLLECTION'
@@ -98,7 +98,7 @@ class ExportarAssets(bpy.types.Operator):
 
     bl_idname = "view3d.link_assets"
     bl_label = "Link assets"
-    bl_description = "Conecta los assets con el archivo.blend actual"
+    bl_description = "Connect the assets with the current blend file"
 
     model: bpy.props.StringProperty(default=" ") #Prop que recoje el nombre del modelo que se instancia
     colec: bpy.props.StringProperty(default=" ") #Prop que recoje el nombre de la colección donde se guardan las instancias
@@ -107,7 +107,7 @@ class ExportarAssets(bpy.types.Operator):
         
         col = buscarAssets("BETA_assets.blend",self.model)
         crearAssets(col,self.colec)
-        print("Modelo cargado: "+self.model)
+        print("Model linked: "+self.model)
 
         return {'FINISHED'}
 
@@ -115,7 +115,7 @@ class ScatterOperator(bpy.types.Operator):
 
     bl_idname = "view3d.scatter_operator"
     bl_label = "Scatter Tool"
-    bl_description = "Activa el modo Scattering"
+    bl_description = "Activate the Scattering mode"
 
     model: bpy.props.StringProperty(default=" ") #Prop que recoje el nombre del modelo que se instancia
     
@@ -126,7 +126,7 @@ class ScatterOperator(bpy.types.Operator):
     def execute(self, context):
         
         scatterTool(self.model)
-        print("Modelo cargado: "+self.model)
+        print("Model linked: "+self.model)
 
         return {'FINISHED'}
 
@@ -134,7 +134,7 @@ class ScatterActivator(bpy.types.Operator):
 
     bl_idname = "view3d.scatter_activator"
     bl_label = "Scatter Tool"
-    bl_description = "Aplica el Scatter, una vez que aplique el scatter, no se podrá revertir la acción"
+    bl_description = "Apply the Scatter, once applied it'll not be able to reverse the action"
 
     @classmethod
     def poll(cls, context):
@@ -145,6 +145,6 @@ class ScatterActivator(bpy.types.Operator):
         try: 
             bpy.ops.object.duplicates_make_real()
             bpy.ops.object.particle_system_remove()
-        except RuntimeError: print("Salga del modo WEIGHT PAINT")
+        except RuntimeError: print("Exit of the WEIGHT PAINT")
         
         return {'FINISHED'}

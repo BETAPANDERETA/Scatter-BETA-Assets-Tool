@@ -1,17 +1,17 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
 # CONTACT: lbetancurd@unal.edu.co                                       |
-# LICENCE: (POR DEFINIR)                                                |
+# LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 
 bl_info = {
     "name" : "Scatter BETA-Assets Tool",
     "author" : "BETAPANDERETA <lbetancurd@unal.edu.co>",
-    "description" : "Este Add-on sirve para generar ambientes con assets de mi autoria",
-    "blender" : (2, 82, 0),
-    "version" : (0, 7, 5),
+    "description" : "This add-on incorporates +21 assets made by me, also includes a Scatter tool",
+    "blender" : (2, 90, 0),
+    "version" : (0, 7, 6),
     "location" : "VIEW_3D > UI",
-    "warning" : "Este Add-on está en cosntrucción, puede tener algunos bugs",
+    "warning" : "If you find any bug let me know please",
     "category" : "Scattering-Assets-Manager"
 }
 

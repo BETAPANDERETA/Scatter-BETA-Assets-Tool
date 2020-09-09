@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
 # CONTACT: lbetancurd@unal.edu.co                                       |
-# LICENCE: (POR DEFINIR)                                                |
+# LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 
 import os
@@ -128,7 +128,7 @@ def controlOp(
     ):
 
         if pvw == img:
-            prop = column.operator('view3d.link_assets',text = "Importar "+model,icon='SEQ_CHROMA_SCOPE')
+            prop = column.operator('view3d.link_assets',text = "IMPORT: "+model,icon='SEQ_CHROMA_SCOPE')
             prop.model = model
             prop.colec = coll
     
@@ -139,7 +139,7 @@ def controlScat(
         model,  # Modelo a buscar en los assets
     ):
         if pvw == img:
-            prop = column.operator('view3d.scatter_operator',text="Scattering", icon='EVENT_S')
+            prop = column.operator('view3d.scatter_operator',text="SCATTERING", icon='EVENT_S')
             prop.model = model
 
 #--------------------------------------------------------------------
@@ -160,9 +160,9 @@ class PanelAddon(bpy.types.Panel):
         wm = context.window_manager
         
         col = layout.column(align=True)
-        col.label(text="Autor: BETAPANDERETA",icon='FILE_SCRIPT')
-        col.label(text="Versión blender: 2.82 (sub 7)",icon='BLENDER')
-        col.label(text="Versión: 0.7.5",icon='INFO')
+        col.label(text="Author: BETAPANDERETA",icon='FILE_SCRIPT')
+        col.label(text="blender version: 2.9",icon='BLENDER')
+        col.label(text="Version: 0.7.6",icon='INFO')
 
 #--------------------------------------------------------------------
 #|                      Panel de previews ARBOLES                   |
@@ -170,7 +170,7 @@ class PanelAddon(bpy.types.Panel):
 
 class PanelArboles(bpy.types.Panel):
     
-    bl_label = "- ARBOLES -"
+    bl_label = "- TREES -"
     bl_idname = "VIEW3D_PT_PanelArboles"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -209,7 +209,7 @@ class PanelArboles(bpy.types.Panel):
 
 class PanelTerreno(bpy.types.Panel):
     
-    bl_label = "- TERRENO -"
+    bl_label = "- TERRAIN - LANDS -"
     bl_idname = "VIEW3D_PT_PanelTerreno"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -248,7 +248,7 @@ class PanelTerreno(bpy.types.Panel):
 
 class PanelVar(bpy.types.Panel):
     
-    bl_label = "- BETA MODELOS (BONUS) -"
+    bl_label = "- BETA MODELS (GIFT) -"
     bl_idname = "VIEW3D_PT_PanelVar"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -262,19 +262,19 @@ class PanelVar(bpy.types.Panel):
 
         col = layout.column(align=True)
         col.label(
-            text="- AUTOR MODELOS: BETA -",
+            text="- MODELS AUTHOR: BETA -",
             icon='BLENDER'
         )
         col.label(
-            text="- Estos modelos son de libre uso - ",
+            text="- This models are free - ",
             icon='ERROR'
         )
         col.label(
-            text="- No podrán ser vendidos -",
+            text="- They can't be sold -",
             icon='CANCEL'
         )
         col.label(
-            text="- No se usarán para fines comerciales -",
+            text="- They will not be used for commercial purposes -",
             icon='CANCEL'
         )
 
@@ -285,7 +285,7 @@ class PanelVar(bpy.types.Panel):
         controlOp(wm.previews_cascos,"noble.png",col,"Noble_6",nom_var_coll)
 
         col.label(
-            text="¡No olvides dar créditos a autor!",
+            text="Don't forget give me credits!",
             icon='FAKE_USER_ON'
         )
 
@@ -295,7 +295,7 @@ class PanelVar(bpy.types.Panel):
 
 class PanelOpcionesScatter(bpy.types.Panel):
     
-    bl_label = "- OPCIONES DE SCATTER -"
+    bl_label = "- SCATTER OPTIONS -"
     bl_idname = "VIEW3D_PT_PanelOpcionesScatter"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -306,7 +306,7 @@ class PanelOpcionesScatter(bpy.types.Panel):
 
         layout = self.layout
 
-        msj = " - CONTROLES DE SCATTER - "
+        msj = " - SCATTER TOOLS - "
         col = layout.column()
         col.label(text= msj, icon='EXPERIMENTAL')
 
@@ -328,19 +328,19 @@ class PanelOpcionesScatter(bpy.types.Panel):
             try:
                 if obj.modifiers["ParticleSettings"] is not None:  
 
-                    col.prop(bpy.data.particles[act_id[-1]],'count',text ="Cant. de objetos")
-                    col.prop(bpy.data.particles[act_id[-1]],'size_random',text ="Variación tamaño")
-                    col.prop(bpy.data.particles[act_id[-1]],'particle_size',text ="Tam. de objetos")
-                    col.prop(bpy.data.particles[act_id[-1]],'rotation_factor_random',text ="Rand. Orient.")
-                    col.prop(bpy.data.particles[act_id[-1]],'rotation_mode',text ="Orientación")
+                    col.prop(bpy.data.particles[act_id[-1]],'count',text ="Number of objects")
+                    col.prop(bpy.data.particles[act_id[-1]],'size_random',text ="Size random")
+                    col.prop(bpy.data.particles[act_id[-1]],'particle_size',text ="Objects size")
+                    col.prop(bpy.data.particles[act_id[-1]],'rotation_factor_random',text ="Random orientation")
+                    col.prop(bpy.data.particles[act_id[-1]],'rotation_mode',text ="Rotation")
                 
                     col = layout.column()
-                    col.operator('view3d.scatter_activator',text = "Aplicar Scatter",icon='CHECKBOX_HLT')
-                    col.label(text="Si aplica el Scatter, no podrá revertir la acción",icon= 'ERROR')
-                    col.label(text="Asegurese de salir del modo 'Weight paint'",icon= 'ERROR')
+                    col.operator('view3d.scatter_activator',text = "APPLY SCATTER",icon='CHECKBOX_HLT')
+                    col.label(text="Once applied the Scatter it'll not be able to reverse the action",icon= 'ERROR')
+                    col.label(text="Exit of the'Weight paint mode' to apply the Scatter",icon= 'ERROR')
         
             except (KeyError,IndexError):
-                    print("Aún no se ha hecho el scattering")
+                    pass
 
         #print(act_id) -----> Visualizo las particulas existentes
 
