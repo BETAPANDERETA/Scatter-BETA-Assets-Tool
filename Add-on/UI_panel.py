@@ -128,7 +128,7 @@ def controlOp(
     ):
 
         if pvw == img:
-            prop = column.operator('view3d.link_assets',text = "IMPORT: "+model,icon='SEQ_CHROMA_SCOPE')
+            prop = column.operator('view3d.link_assets',text = "IMPORT: "+model,icon='APPEND_BLEND')
             prop.model = model
             prop.colec = coll
     
@@ -139,7 +139,7 @@ def controlScat(
         model,  # Modelo a buscar en los assets
     ):
         if pvw == img:
-            prop = column.operator('view3d.scatter_operator',text="SCATTERING", icon='EVENT_S')
+            prop = column.operator('view3d.scatter_operator',text="SCATTER", icon='EVENT_S')
             prop.model = model
 
 #--------------------------------------------------------------------
@@ -160,9 +160,9 @@ class PanelAddon(bpy.types.Panel):
         wm = context.window_manager
         
         col = layout.column(align=True)
-        col.label(text="Author: BETAPANDERETA",icon='FILE_SCRIPT')
-        col.label(text="blender version: 2.9",icon='BLENDER')
-        col.label(text="Version: 0.7.6",icon='INFO')
+        col.label(text="Author: BETAPANDERETA",icon='COMMUNITY')
+        col.label(text="Blender version: 2.9",icon='BLENDER')
+        col.label(text="Version: 0.7.7",icon='FILE_SCRIPT')
 
 #--------------------------------------------------------------------
 #|                      Panel de previews ARBOLES                   |
@@ -254,6 +254,7 @@ class PanelVar(bpy.types.Panel):
     bl_region_type = 'UI'
     bl_category = "SB-ATool"
     bl_parent_id = "VIEW3D_PT_PanelAddon"
+    bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
 

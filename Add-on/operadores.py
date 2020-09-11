@@ -11,39 +11,36 @@ import os
 #|                       Funciones de los operadores                  |
 #--------------------------------------------------------------------
 
-def buscarAssets(file,model):
+def append_assets(file,model,nom_coll):
 
-    assets = os.path.join(os.path.dirname(__file__), "assets//"+file)
+    assets = os.path.join(os.path.dirname(__file__), "assets//"+file+"\Collection")
+    bpy.ops.wm.append(filename=model,directory=assets) # Traigo el objeto del .blend file de "assets"
+    esc = bpy.context.view_layer.active_layer_collection  # Obtengo la colección activa en el outliner 
 
-    #With crea la conexión entre el .blend actual y los BETA_assets
-
-    with bpy.data.libraries.load(assets, link=True) as (data_from, data_to):
-        
-        for col_nombre in data_from.collections:
-            if col_nombre != model:
-               continue
-            data_to.collections.append(col_nombre)
-    
-    return data_to.collections
-
-def crearAssets(col,nom_coll):
-    
-    esc = bpy.context.scene  # Busco la colección "Scene" del .blend actual
-
-    # Miro si existe alguna colección con el nombre de la colección, sino existe la creo 
+    # Miro si existe alguna colección con el nombre de model, sino existe la creo 
 
     try : 
         nueva_col = esc.collection.children[nom_coll]
     except KeyError:
         nueva_col = bpy.data.collections.new(nom_coll)
-        esc.collection.children.link(nueva_col)
+        esc.collection.children.link(nueva_col) # La colección nueva se añade a la colección activa
 
-    for item in col:
-        obj_vacio = bpy.data.objects.new(item.name,None)
-        obj_vacio.instance_type = 'COLLECTION'
-        obj_vacio.instance_collection = item
-        nueva_col.objects.link(obj_vacio)
+    # Colección a remover
 
+    coll_from = bpy.data.collections[model] # Colección importada de BETA_Assets.blend
+    name = coll_from.name                   # Nombre de la colleción para que el operador Scatter sepa con que hacer el Scatter
+
+    # Traslando la colección a nueva_col
+
+    for col in bpy.data.collections:
+
+        if col == coll_from:
+            new_col = coll_from.copy()
+            new_col.name = name
+            nueva_col.children.link(new_col)
+    
+    bpy.data.collections.remove(coll_from) # Quito la collección 
+    
 def scatterTool(particula):
 
     # Info. de objetos  seleccionados
@@ -105,9 +102,8 @@ class ExportarAssets(bpy.types.Operator):
 
     def execute(self, context):
         
-        col = buscarAssets("BETA_assets.blend",self.model)
-        crearAssets(col,self.colec)
-        print("Model linked: "+self.model)
+        append_assets("BETA_assets.blend",self.model,self.colec)
+        print("Model imported: "+self.model)
 
         return {'FINISHED'}
 
@@ -126,7 +122,6 @@ class ScatterOperator(bpy.types.Operator):
     def execute(self, context):
         
         scatterTool(self.model)
-        print("Model linked: "+self.model)
 
         return {'FINISHED'}
 
@@ -145,6 +140,10 @@ class ScatterActivator(bpy.types.Operator):
         try: 
             bpy.ops.object.duplicates_make_real()
             bpy.ops.object.particle_system_remove()
-        except RuntimeError: print("Exit of the WEIGHT PAINT")
+        except RuntimeError:
+             
+            print("To apply the Scatter, go to OBJECT MODE")
+            self.report({'WARNING'},"To apply the Scatter, go to OBJECT MODE")
+            return {'CANCELLED'}
         
         return {'FINISHED'}
