@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
-# CONTACT: lbetancurd@unal.edu.co                                       |
+# CONTACT: betaleonardo2017@gmail.com                                   |
 # LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 
@@ -33,6 +33,8 @@ def append_assets(file,model,nom_coll):
     # Traslando la colección a nueva_col
 
     for col in bpy.data.collections:
+
+        col.hide_viewport = False # Haceindo visible en el viewport el objeto importado
 
         if col == coll_from:
             new_col = coll_from.copy()
@@ -104,6 +106,7 @@ class ExportarAssets(bpy.types.Operator):
         
         append_assets("BETA_assets.blend",self.model,self.colec)
         print("Model imported: "+self.model)
+        self.report({'OPERATOR'},"Model imported: "+self.model)
 
         return {'FINISHED'}
 
@@ -141,7 +144,7 @@ class ScatterActivator(bpy.types.Operator):
             bpy.ops.object.duplicates_make_real()
             bpy.ops.object.particle_system_remove()
         except RuntimeError:
-             
+
             print("To apply the Scatter, go to OBJECT MODE")
             self.report({'WARNING'},"To apply the Scatter, go to OBJECT MODE")
             return {'CANCELLED'}

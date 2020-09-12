@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
-# CONTACT: lbetancurd@unal.edu.co                                       |
+# CONTACT: betaleonardo2017@gmail.com                                   |
 # LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 

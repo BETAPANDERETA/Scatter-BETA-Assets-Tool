@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------
 # AUTOR: BETAPANDERETA                                                  |
-# CONTACT: lbetancurd@unal.edu.co                                       |
+# CONTACT: betaleonardo2017@gmail.com                                   |
 # LICENCE: MIT                                                          |
 #-----------------------------------------------------------------------
 
@@ -236,6 +236,9 @@ class PanelTerreno(bpy.types.Panel):
 
         controlOp(wm.my_previews_terr,"Rocks_pack.png",col,"Rock_pack",nom_terr_coll)
         controlScat(wm.my_previews_terr,"Rocks_pack.png",col,"Rock_pack")
+
+        controlOp(wm.my_previews_terr,"Grass.png",col,"Grass",nom_terr_coll)
+        controlScat(wm.my_previews_terr,"Grass.png",col,"Grass")
 
         controlOp(wm.my_previews_terr,"Terrain_1.png",col,"Terrain_1",nom_terr_coll)
         controlOp(wm.my_previews_terr,"Terrain_2.png",col,"Terrain_2",nom_terr_coll)
