@@ -20,7 +20,7 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 
 ## Requisitos:
   Blender:
-      version 2.82 (sub 7) y más recientes (No se ha probado en versiones anteriores)
+      version 2.8x o 2.90  (No se ha probado en versiones anteriores)
 ## Acerca del add-on
 1. Este Add-on incorpora unos Assets realizados por mi (Modelos 3D) dispuestos para realizar una técnica conocida cómo "Scattering". más acerca de Scattering: (En construcción)
 2. En este repositorio no se encuentra el archivo de assets debido a las limitaciones de subida de GitHub, habilitaré una carpeta en drive para poder obtenerlo.
@@ -39,35 +39,22 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 4. Dentro de blender, irse al apartado "Edit", ya dentro ir a "Preferences", en el sub-menú de Add-ons, ir a "Install" (Parte superior derecha) y allí buscar donde se encuentra la carpeta comprimida.
 5. Habilitar el add-on.
 
-<p align="left">
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=green&label=DRIVE&logo=google&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE%2Fview%3Fusp%3Dsharing"> [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
-</p>
+:floppy_disk: [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
 
-## Uso
-(Video en construcción)
+
 ## Demostraciones y capturas
 
-<p align="left">
+:video_camera: [SB-AT Add-on v0.7.7](https://youtu.be/qb9wL8ZUAc8)
 
-  <!-- Icono youtube -->
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=red&label=VIDEO%20DEMOSTRACI%C3%93N&logo=YOUTUBE&style=for-the-badge&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8c6GiAnGTdA">
-  <!-- Enlace video -->
-  <a href="http://www.youtube.com/watch?feature=player_embedded&v=8c6GiAnGTdA" target="_blank">
-  <img src="http://img.youtube.com/vi/8c6GiAnGTdA.jpg" alt="SB-AT" width="240" height="180" border="10" />
-  </a>
+:video_camera: [SB-AT Versión anterior](https://youtu.be/8c6GiAnGTdA)
 
 </p>
 
 ## Descargas externas
 
-<p align="left">
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=RED&label=GUMROAD&logo=gumroad&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fgum.co%2FKdCfz"> [Gumroad](https://gum.co/KdCfz)
-</p>
+:one: [SB-AT v0.7.7 - Blender Marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
 
-<p align="left">
-
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=yellow&label=Blender%20marketplace&logo=blender&logoColor=white&style=for-the-badge&url=https%3A%2F%2Fblendermarket.com%2Fproducts%2Fscatter-beta-assets-tool-"> [Blender marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
-</p>
+:two: [SB-AT v0.7.6 - Gumroad](https://gum.co/KdCfz)
 
 ## Licencia
 Licencia MIT (Open source)
