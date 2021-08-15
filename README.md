@@ -24,13 +24,8 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 ## Acerca del add-on
 1. Este Add-on incorpora unos Assets realizados por mi (Modelos 3D) dispuestos para realizar una técnica conocida cómo "Scattering". más acerca de Scattering: (En construcción)
 2. En este repositorio no se encuentra el archivo de assets debido a las limitaciones de subida de GitHub, habilitaré una carpeta en drive para poder obtenerlo.
-3. Está en su versión 0.7.5.
+3. Está en su versión 0.7.7.
 4. El add-on aún está en construcción, sujeto a mejoras.
-
-## Herramientas del Add-on
-<p align="center">
-  <img width="500" height="1100" src=Info/SBAT_INFO_ES.png>
-</p>
 
 ## Instalación
 1. Descargar la carpeta Add-on de este repositorio.
@@ -41,20 +36,6 @@ SB-AT Es un add-on para blender que simplifica la tarea de "Scattering" (generac
 
 :floppy_disk: [BETA_assets.blend aquí](https://drive.google.com/file/d/11JJuuFlaqqWwrkHFwHzoIUzQhxzAG9eE/view?usp=sharing)
 
-
-## Demostraciones y capturas
-
-:video_camera: [SB-AT Add-on v0.7.7](https://youtu.be/qb9wL8ZUAc8)
-
-:video_camera: [SB-AT Versión anterior](https://youtu.be/8c6GiAnGTdA)
-
-</p>
-
-## Descargas externas
-
-:one: [SB-AT v0.7.7 - Blender Marketplace](https://blendermarket.com/products/scatter-beta-assets-tool-)
-
-:two: [SB-AT v0.7.6 - Gumroad](https://gum.co/KdCfz)
 
 ## Licencia
 Licencia MIT (Open source)
